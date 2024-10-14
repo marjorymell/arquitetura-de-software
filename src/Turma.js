@@ -27,3 +27,5 @@ class Turma {
         return Boolean(this.#nota >= 6.0)
     }
 }
+
+module.exports = Turma

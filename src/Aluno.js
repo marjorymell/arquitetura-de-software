@@ -29,3 +29,5 @@ class Aluno {
         this.RA = RA;
     }
 }
+
+module.exports = Aluno

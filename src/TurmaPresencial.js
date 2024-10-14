@@ -1,5 +1,7 @@
+const Turma = require('./Turma')
+
 class TurmaPresencial extends Turma {
-    #frequencia
+    #frequencia;
 
     constructor(codigo, nota, frequencia) {
         super(codigo, nota)
@@ -18,3 +20,5 @@ class TurmaPresencial extends Turma {
         return Boolean(super.aprovado() && this.#frequencia >= 75)
     }
 }
+
+module.exports = TurmaPresencial
